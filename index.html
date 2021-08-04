@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Food Junction</title>
+</head>
+<body>
+    <div id="data_div">
+
+    </div>
+</body>
+</html>
+<script type="module">
+    import myNavbar from "./component/navbar.js"
+
+    document.body.innerHTML=myNavbar;
+
+    async function allMeals(){
+
+            let data_div=document.getElementById('data_div')
+
+
+        let res =await fetch("https://www.themealdb.com/api/json/v1/1/filter.php?a=Indian")
+
+        let data=await res.json();
+
+        data.meals.forEach((el)=>{
+
+            let div =document.createElement('div');
+            let h4=document.createElement('h4');
+            h4.innerHTML=el.strMeal;
+
+            let img=document.createElement("img");
+            img.src=el.strMealThumb;
+
+            div.append(h4,img);
+            data_div.append(div);
+        })
+        
+        
+    }
+    allMeals();
+
+    let day=document.getElementById('Day');
+
+   day.addEventListener("click",()=>window.location.href="raceipiOfTheDay.html");
+
+    let latest = document.getElementById('latest');
+
+        latest.addEventListener("click", () => window.location.href = "showLatestRecipy.html");
+
+
+    async function searchMeal() {
+
+            let data_div = document.getElementById('data_div')
+            data_div.innerHTML=null;
+
+
+            let s_data=document.getElementById('s_data').value;
+
+            let res = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${s_data}`)
+
+            let data = await res.json();
+
+            data.meals.forEach((el) => {
+
+                let div = document.createElement('div');
+                let h4 = document.createElement('h4');
+                h4.innerHTML = el.strMeal;
+
+                let img = document.createElement("img");
+                img.src = el.strMealThumb;
+
+                div.append(h4, img);
+                data_div.append(div);
+            })
+
+
+        }
+
+        let btn=document.getElementById('btn');
+
+        btn.addEventListener('click',()=> searchMeal())
+
+
+   
+
+
+</script>
