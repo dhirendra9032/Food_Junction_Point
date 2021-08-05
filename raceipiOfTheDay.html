@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="./style/style.css">
     <title>Today Raceipi</title>
 </head>
+<style>
+    #Day{
+        color: #ffeb3b;
+    }
+  
+</style>
 
 <body>
-    <h1>Receipi Of The Day</h1>
-    <div id="data_div">
-
-    </div>
+   
+  <div>hello</div> 
    
 </body>
 
@@ -42,7 +46,18 @@
                 let img = document.createElement("img");
                 img.src = el.strMealThumb;
 
-                div.append(h4, img);
+                let p1=document.createElement('p');
+                p1.innerHTML="Category : "+el.strCategory;
+
+                 let p2 = document.createElement('p');
+                p2.innerHTML = "Country : " + el.strArea;
+
+                let p3 = document.createElement('p');
+                p3.innerHTML = "Ingredients : " + el.strIngredient1+","+el.strIngredient2 + ","+el.strIngredient3 + ","+el.strIngredient4 + ","+el.strIngredient5 + ","+el.strIngredient6;
+
+                
+
+                div.append(h4, img,p1,p2,p3);
                 data_div.append(div);
             })
 

@@ -6,9 +6,7 @@
 }
 
 body {
- 
- 
-  background: #FFCDD2;
+  background: #ffcdd2;
   text-align: center;
 }
 .navbar {
@@ -69,4 +67,13 @@ body {
 #data_div div h4 {
   color: #d50000;
   text-shadow: 0 1px 10px rgba(253, 252, 252, 0.996);
+}
+.name {
+  margin-top: 105px;
+}
+
+#data_div div p {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(28, 27, 68);
 }
