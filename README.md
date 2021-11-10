@@ -1,48 +1,38 @@
-<h2>Trivia</h2>
-In the project directory, I've made an Interesting Quiz application of top 3 popular web-shows.
+<h2>Food Junction</h2>
+In the project directory, I've made an Interesting Website that shows food recipies.
 
 <hr/>
 <h3>Languages Used</h3>
 
-* REACT
+
 * JavaScript
-* React Redux
-* React Router Dom
-* axios
-* react-dom
-* react-redux
-* react-router-dom
-* react-scripts
-* redux
-* redux-thunk
+* HTML
+* CSS
+
 
 <hr/>
 
 ## Sneak Peak
 #### Landing Page
-<img src="https://i.im.ge/2021/07/24/D1DJF.png"/>
+<img src="https://drive.google.com/file/d/19kaqKR1E-_fBHx2kGIjI3VD8JEMauWVG/view?usp=sharing"/>
 
-#### Quiz Page
+#### Recipy of the day
 
-<img src="https://i.im.ge/2021/07/24/D17E6.png"/>
+<img src="https://drive.google.com/file/d/1jtBTtYRws2xH2sVvRtckos6d0fszXE0L/view?usp=sharing"/>
 <hr/>
-<img src="https://i.im.ge/2021/07/24/D1aDz.png"/>
+
+####  latest Recipy 
+
+<img src="https://drive.google.com/file/d/1jtBTtYRws2xH2sVvRtckos6d0fszXE0L/view?usp=sharing"/>
 <hr/>
-<img src="https://i.im.ge/2021/07/24/D1sMS.png"/>
-<hr/>
+
 
 ## Installation and Setup Instructions
-Clone down this repository using this <a href="https://github.com/khushbookhator/Trivia">link</a>
-
-You will need node and npm installed globally on your machine. 
-
-Inside Client install with npm
+Clone down this repository using this <a href="https://github.com/dhirendra9032/Food_Junction_Point.git">link</a>
 
 
-```bash
-  npm install
-```
 
-To Run Test Suite: npm test To Start Server: npm start
+
+To Run Test Suite: Click Run>Start Debugging
 
 To Visit App: localhost:3000/
