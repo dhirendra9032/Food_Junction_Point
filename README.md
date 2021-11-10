@@ -14,16 +14,16 @@ In the project directory, I've made an Interesting Website that shows food recip
 
 ## Sneak Peak
 #### Landing Page
-<img src="https://im.ge/i/oY1DOy"/>
+<img src="https://i.im.ge/2021/11/10/oY1DOy.png"/>
 
 #### Recipy of the day
 
-<img src="https://im.ge/i/oY1azJ"/>
+<img src="https://i.im.ge/2021/11/10/oY1sya.png"/>
 <hr/>
 
 ####  latest Recipy 
 
-<img src="https://im.ge/i/oY1sya"/>
+<img src="https://i.im.ge/2021/11/10/oY1azJ.png"/>
 <hr/>
 
 
